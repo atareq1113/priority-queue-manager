@@ -1,0 +1,6 @@
+{
+  "name": "seatgeek-preloader",
+  "version": "0.0.13",
+  "description": "SeatGeek preloader plugin",
+  "main": "src/index.js"
+}
