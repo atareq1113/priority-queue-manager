@@ -191,7 +191,7 @@ module.exports = {
 
     const myPreloader = {
       urlPatterns: [
-        '^https:\/\/seatgeek\.com'
+        '^https:\/\/example\.com'
       ],
       pluginPath: __dirname,
       entry: "getPosition",
@@ -199,7 +199,7 @@ module.exports = {
     }
 
     myPreloaderId = jancy.preloaders.add(myPreloader)
-    mySettingPanelId = jancy.settingPanels.add("SeatGeek", getSettingsPanel)
+    mySettingPanelId = jancy.settingPanels.add("Example", getSettingsPanel)
   },
 
   /* --------------------------------------------------------------------------
@@ -240,7 +240,7 @@ module.exports = {
           priorityGroup = preferences.event_priority;
         } else if (
           document.body.innerText.includes("Tickets will be delivered to the email address provided below.") ||
-          document.body.innerText.includes("SeatGeek checkout is always secure and encrypted.") ||
+          document.body.innerText.includes("Example checkout is always secure and encrypted.") ||
           document.body.innerText.includes("We sell resale tickets. Resale tickets may be above or below face value.")
         ) {
           priorityGroup = preferences.checkout_priority;
